@@ -16,6 +16,7 @@
 		B0223C1324ACE72A009637ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0223C1124ACE72A009637ED /* LaunchScreen.storyboard */; };
 		B0223C1E24ACE72A009637ED /* GoRideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0223C1D24ACE72A009637ED /* GoRideTests.swift */; };
 		B0223C2924ACE72A009637ED /* GoRideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0223C2824ACE72A009637ED /* GoRideUITests.swift */; };
+		B0223C3724ACE750009637ED /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B0223C3624ACE750009637ED /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B0223C2424ACE72A009637ED /* GoRideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoRideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0223C2824ACE72A009637ED /* GoRideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoRideUITests.swift; sourceTree = "<group>"; };
 		B0223C2A24ACE72A009637ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0223C3624ACE750009637ED /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		B0223BF724ACE728009637ED = {
 			isa = PBXGroup;
 			children = (
+				B0223C3624ACE750009637ED /* .gitignore */,
 				B0223C0224ACE728009637ED /* GoRide */,
 				B0223C1C24ACE72A009637ED /* GoRideTests */,
 				B0223C2724ACE72A009637ED /* GoRideUITests */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0223C3724ACE750009637ED /* .gitignore in Resources */,
 				B0223C1324ACE72A009637ED /* LaunchScreen.storyboard in Resources */,
 				B0223C1024ACE72A009637ED /* Assets.xcassets in Resources */,
 				B0223C0B24ACE728009637ED /* Main.storyboard in Resources */,
