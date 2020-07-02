@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,121 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoRide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tAO-JN-YPC">
+                                <rect key="frame" x="16" y="60" width="382" height="34"/>
+                                <color key="backgroundColor" red="0.92974829670000003" green="0.94079869989999998" blue="0.96078807119999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Телефон(Необязательно)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vJj-T3-NQ6">
+                                <rect key="frame" x="16" y="110" width="382" height="34"/>
+                                <color key="backgroundColor" red="0.92974829670000003" green="0.94079869989999998" blue="0.96078807119999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для связи вы можете указать номер телефона или воспользоваться чатом (количество сообщений ограничено)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jX6-bG-Za5">
+                                <rect key="frame" x="16" y="152" width="382" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.78469747300000003" green="0.48236960169999998" blue="0.12530943750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="15S-8C-DLZ">
+                                <rect key="frame" x="16" y="222" width="382" height="32"/>
+                                <segments>
+                                    <segment title="Я парень"/>
+                                    <segment title="Я девушка"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mP1-pK-sBH">
+                                <rect key="frame" x="16" y="269" width="382" height="32"/>
+                                <segments>
+                                    <segment title="Ищу пилота"/>
+                                    <segment title="Ищу посажира"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Модель мотоцикла (Необязательно)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OES-sZ-rAg">
+                                <rect key="frame" x="16" y="316" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8y6-Ca-Lpp">
+                                <rect key="frame" x="16" y="362" width="382" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Есть экипировка для пассажира" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSH-Sy-yap">
+                                        <rect key="frame" x="0.0" y="5.5" width="306.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DeJ-Lu-8Se">
+                                        <rect key="frame" x="321.5" y="0.0" width="62.5" height="31"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZO9-fK-FoI">
+                                <rect key="frame" x="16" y="405" width="382" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="У меня есть экипировка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1J-rQ-8zl">
+                                        <rect key="frame" x="0.0" y="5.5" width="271.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ly-v3-Grc">
+                                        <rect key="frame" x="301.5" y="0.0" width="82.5" height="31"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BJJ-eJ-6j8">
+                                <rect key="frame" x="16" y="452" width="382" height="32"/>
+                                <segments>
+                                    <segment title="Парня"/>
+                                    <segment title="Девушку"/>
+                                    <segment title="Не важно"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OES-sZ-rAg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5e4-8h-AlM"/>
+                            <constraint firstItem="ZO9-fK-FoI" firstAttribute="top" secondItem="8y6-Ca-Lpp" secondAttribute="bottom" constant="12" id="7qO-pM-hYJ"/>
+                            <constraint firstItem="tAO-JN-YPC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="7tR-aq-WMy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OES-sZ-rAg" secondAttribute="trailing" constant="16" id="8TX-GY-C7h"/>
+                            <constraint firstItem="8y6-Ca-Lpp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9vn-sM-A0z"/>
+                            <constraint firstItem="mP1-pK-sBH" firstAttribute="top" secondItem="15S-8C-DLZ" secondAttribute="bottom" constant="16" id="DBd-qC-SxD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vJj-T3-NQ6" secondAttribute="trailing" constant="16" id="GA0-U8-QxN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8y6-Ca-Lpp" secondAttribute="trailing" constant="16" id="KMR-rc-mKI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jX6-bG-Za5" secondAttribute="trailing" constant="16" id="NMo-P4-YIy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BJJ-eJ-6j8" secondAttribute="trailing" constant="16" id="OJO-CE-l7I"/>
+                            <constraint firstItem="jX6-bG-Za5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Q0S-RN-PWK"/>
+                            <constraint firstItem="mP1-pK-sBH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="R8C-pX-0sJ"/>
+                            <constraint firstItem="tAO-JN-YPC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TJC-Wx-Dx6"/>
+                            <constraint firstItem="BJJ-eJ-6j8" firstAttribute="top" secondItem="ZO9-fK-FoI" secondAttribute="bottom" constant="16" id="VtU-8S-jqO"/>
+                            <constraint firstItem="BJJ-eJ-6j8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Wv8-VN-DHp"/>
+                            <constraint firstItem="OES-sZ-rAg" firstAttribute="top" secondItem="mP1-pK-sBH" secondAttribute="bottom" constant="16" id="XQu-a2-uJu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZO9-fK-FoI" secondAttribute="trailing" constant="16" id="ZUk-rp-89N"/>
+                            <constraint firstItem="15S-8C-DLZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bA8-S2-87w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="15S-8C-DLZ" secondAttribute="trailing" constant="16" id="ior-zk-GSj"/>
+                            <constraint firstItem="8y6-Ca-Lpp" firstAttribute="top" secondItem="OES-sZ-rAg" secondAttribute="bottom" constant="12" id="jDT-J9-C6P"/>
+                            <constraint firstItem="vJj-T3-NQ6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="k0i-hQ-3St"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mP1-pK-sBH" secondAttribute="trailing" constant="16" id="k7I-Ma-tWl"/>
+                            <constraint firstItem="jX6-bG-Za5" firstAttribute="top" secondItem="vJj-T3-NQ6" secondAttribute="bottom" constant="8" id="nrC-UN-6cD"/>
+                            <constraint firstItem="vJj-T3-NQ6" firstAttribute="top" secondItem="tAO-JN-YPC" secondAttribute="bottom" constant="16" id="pj0-eG-OST"/>
+                            <constraint firstItem="ZO9-fK-FoI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rTk-g2-TaW"/>
+                            <constraint firstItem="15S-8C-DLZ" firstAttribute="top" secondItem="jX6-bG-Za5" secondAttribute="bottom" constant="16" id="szz-fW-4vU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tAO-JN-YPC" secondAttribute="trailing" constant="16" id="wHY-3T-hhP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="115"/>
         </scene>
     </scenes>
 </document>
